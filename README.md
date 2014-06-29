@@ -33,14 +33,14 @@ sudo python setup.py install
 from image_converter import converter 
 import cStringIO
  
-f = open( "3423432.jpg", "r" )
+f = open( "original.jpg", "r" )
  
 data = cStringIO.StringIO( f.read() )
 output = converter.resize_and_optimize( data, 400, 300 )
  
 f.close()
  
-f = open( "test.jpg", "w" )
+f = open( "new.jpg", "w" )
 f.write( output.getvalue() )
 f.close() 
  
