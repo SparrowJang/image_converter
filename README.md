@@ -28,7 +28,7 @@ sudo python setup.py install
 
 #Usage
 
-`` python
+``` python
 
 from image_converter import converter 
 import cStringIO
