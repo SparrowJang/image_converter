@@ -10,6 +10,8 @@
 
 Let you convert any image size.
 
+See [javascript version](https://github.com/SparrowJang/imageConverter).
+
 ##Dependency
  
 If you want to run it your device, please make sure you have installed this.
