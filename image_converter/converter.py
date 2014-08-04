@@ -3,7 +3,7 @@ import Image
 import cStringIO
 import base64
 
-def resize_and_optimize( img, width, height ):
+def resize_and_optimize( img, width, height, image_type = "jpeg" ):
 
     img.seek( 0 )
     im = Image.open( img )
@@ -44,7 +44,10 @@ def resize_and_optimize( img, width, height ):
     output_im = resize_img.crop( (start_x, start_y, ( start_x + width ), ( start_y + height )) )
     output.seek( 0 )
     #output_im.convert('RGB').save( "test" , "jpeg" )
-    output_im.convert('RGB').save( output , "jpeg" )
+    if image_type == "jpeg":
+        output_im.convert('RGB').save( output , "jpeg" )
+    else:
+        output_im.save( output , "png" )
     return output
 
 #f = open( "3423432.jpg", "r" )
