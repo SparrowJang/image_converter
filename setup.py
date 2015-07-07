@@ -5,7 +5,7 @@ except:
     from distutils.core import setup, find_packages
                         
 setup(                  
-    version="0.0.3",
+    version="0.0.4",
     description="Let you convert any image size.",
     author="sparrow",    
     author_email="sprrow.jang@gmail.com",
