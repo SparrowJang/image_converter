@@ -1,4 +1,4 @@
-#Image Converter
+# Image Converter
 
 ![original image](/example/head.jpeg)
 
@@ -6,19 +6,19 @@
 
 ![resize image](/example/out_head.jpeg)
 
-##Introduction
+## Introduction
 
 Let you convert any image size.
 
 See [javascript version](https://github.com/SparrowJang/imageConverter).
 
-##Dependency
+## Dependency
  
 If you want to run it your device, please make sure you have installed this.
  
 * pil
 
-##Installation
+## Installation
  
 ``` bash
 git clone https://github.com/SparrowJang/image_converter
@@ -28,7 +28,7 @@ cd image_converter
 sudo python setup.py install
 ```
 
-#Usage
+# Usage
 
 ``` python
 
